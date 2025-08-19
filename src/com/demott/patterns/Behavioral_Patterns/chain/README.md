@@ -8,10 +8,15 @@
 
 ## Example Usage
 ```java
+// Example: Chain of Responsibility for handling commands
 CommandHandler emailHandler = new EmailCommandHandler();
 CommandHandler cronHandler = new CronJobCommandHandler();
 emailHandler.setNext(cronHandler);
-emailHandler.handle(command);
+
+// Try handling different commands
+emailHandler.handleRequest("email");    // Output: Handling email command.
+emailHandler.handleRequest("cronjob");  // Output: Handling cron job command.
+emailHandler.handleRequest("unknown");  // No output, not handled
 ```
 
 ## When to Use

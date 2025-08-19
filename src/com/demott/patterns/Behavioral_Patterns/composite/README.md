@@ -10,8 +10,8 @@
 ## Example Usage
 ```java
 MacroCommand macro = new MacroCommand();
-macro.addCommand(command1);
-macro.addCommand(command2);
+macro.addCommand(new EmailCommand());
+macro.addCommand(new CronJobCommand());
 macro.execute();
 ```
 

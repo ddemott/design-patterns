@@ -9,7 +9,9 @@
 - Concrete Decorators
 
 ## Example Usage
+decorated.execute();
 ```java
+ICommand command = new EmailCommand();
 ICommand decorated = new LoggingCommandDecorator(command);
 decorated.execute();
 ```

@@ -10,8 +10,10 @@
 
 ## Example Usage
 ```java
-ICommand command = new EmailCommand(...);
-command.execute();
+ICommand emailCommand = new EmailCommand();
+ICommand cronJobCommand = new CronJobCommand();
+emailCommand.execute();
+cronJobCommand.execute();
 ```
 
 ## When to Use
