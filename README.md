@@ -6,34 +6,37 @@ This project is a comprehensive reference implementation of all 23 classic desig
 
 ## Pattern Categories & Implementations
 
+
 ### Creational Patterns
-- **Abstract Factory**: `Creational_Patterns/abstractfactory/` ([README](src/com/demott/patterns/Creational_Patterns/abstractfactory/README.md))
-- **Builder**: `Creational_Patterns/builder/` ([README](src/com/demott/patterns/Creational_Patterns/builder/README.md))
-- **Factory Method**: `Creational_Patterns/factory/` ([README](src/com/demott/patterns/Creational_Patterns/factory/README.md))
-- **Prototype**: `Creational_Patterns/prototype/` ([README](src/com/demott/patterns/Creational_Patterns/prototype/README.md))
-- **Singleton**: `Creational_Patterns/singleton/` ([README](src/com/demott/patterns/Creational_Patterns/singleton/README.md))
+- **Abstract Factory**: `creational/abstractfactory/` ([README](src/com/demott/patterns/creational/abstractfactory/README.md))
+- **Builder**: `creational/builder/` ([README](src/com/demott/patterns/creational/builder/README.md))
+- **Factory Method**: `creational/factory/` ([README](src/com/demott/patterns/creational/factory/README.md))
+- **Prototype**: `creational/prototype/` ([README](src/com/demott/patterns/creational/prototype/README.md))
+- **Singleton**: `creational/singleton/` ([README](src/com/demott/patterns/creational/singleton/README.md))
+
 
 ### Structural Patterns
-- **Adapter**: `Structural_Patterns/adapter/` ([README](src/com/demott/patterns/Structural_Patterns/adapter/README.md))
-- **Bridge**: `Structural_Patterns/bridge/` ([README](src/com/demott/patterns/Structural_Patterns/bridge/README.md))
-- **Composite**: `Behavioral_Patterns/composite/` ([README](src/com/demott/patterns/Behavioral_Patterns/composite/README.md))
-- **Decorator**: `Behavioral_Patterns/decorator/` ([README](src/com/demott/patterns/Behavioral_Patterns/decorator/README.md))
-- **Facade**: `Structural_Patterns/facade/` ([README](src/com/demott/patterns/Structural_Patterns/facade/README.md))
-- **Flyweight**: `Structural_Patterns/flyweight/` ([README](src/com/demott/patterns/Structural_Patterns/flyweight/README.md))
-- **Proxy**: `Structural_Patterns/proxy/` ([README](src/com/demott/patterns/Structural_Patterns/proxy/README.md))
+- **Adapter**: `structural/adapter/` ([README](src/com/demott/patterns/structural/adapter/README.md))
+- **Bridge**: `structural/bridge/` ([README](src/com/demott/patterns/structural/bridge/README.md))
+- **Composite**: `behavioral/composite/` ([README](src/com/demott/patterns/behavioral/composite/README.md))
+- **Decorator**: `behavioral/decorator/` ([README](src/com/demott/patterns/behavioral/decorator/README.md))
+- **Facade**: `structural/facade/` ([README](src/com/demott/patterns/structural/facade/README.md))
+- **Flyweight**: `structural/flyweight/` ([README](src/com/demott/patterns/structural/flyweight/README.md))
+- **Proxy**: `structural/proxy/` ([README](src/com/demott/patterns/structural/proxy/README.md))
+
 
 ### Behavioral Patterns
-- **Chain of Responsibility**: `Behavioral_Patterns/chain/` ([README](src/com/demott/patterns/Behavioral_Patterns/chain/README.md))
-- **Command**: `Behavioral_Patterns/command/` ([README](src/com/demott/patterns/Behavioral_Patterns/command/README.md))
-- **Interpreter**: `Behavioral_Patterns/interpreter/` ([README](src/com/demott/patterns/Behavioral_Patterns/interpreter/README.md))
-- **Iterator**: `Behavioral_Patterns/iterator/` ([README](src/com/demott/patterns/Behavioral_Patterns/iterator/README.md))
-- **Mediator**: `Behavioral_Patterns/mediator/` ([README](src/com/demott/patterns/Behavioral_Patterns/mediator/README.md))
-- **Memento**: `Behavioral_Patterns/memento/` ([README](src/com/demott/patterns/Behavioral_Patterns/memento/README.md))
-- **Observer**: `Behavioral_Patterns/observer/` ([README](src/com/demott/patterns/Behavioral_Patterns/observer/README.md))
-- **State**: `Behavioral_Patterns/state/` ([README](src/com/demott/patterns/Behavioral_Patterns/state/README.md))
-- **Strategy**: `Behavioral_Patterns/strategy/` ([README](src/com/demott/patterns/Behavioral_Patterns/strategy/README.md))
-- **Template Method**: `Behavioral_Patterns/templatemethod/` ([README](src/com/demott/patterns/Behavioral_Patterns/templatemethod/README.md))
-- **Visitor**: `Behavioral_Patterns/visitor/` ([README](src/com/demott/patterns/Behavioral_Patterns/visitor/README.md))
+- **Chain of Responsibility**: `behavioral/chainofresponsibility/` ([README](src/com/demott/patterns/behavioral/chainofresponsibility/README.md))
+- **Command**: `behavioral/command/` ([README](src/com/demott/patterns/behavioral/command/README.md))
+- **Interpreter**: `behavioral/interpreter/` ([README](src/com/demott/patterns/behavioral/interpreter/README.md))
+- **Iterator**: `behavioral/iterator/` ([README](src/com/demott/patterns/behavioral/iterator/README.md))
+- **Mediator**: `behavioral/mediator/` ([README](src/com/demott/patterns/behavioral/mediator/README.md))
+- **Memento**: `behavioral/memento/` ([README](src/com/demott/patterns/behavioral/memento/README.md))
+- **Observer**: `behavioral/observer/` ([README](src/com/demott/patterns/behavioral/observer/README.md))
+- **State**: `behavioral/state/` ([README](src/com/demott/patterns/behavioral/state/README.md))
+- **Strategy**: `behavioral/strategy/` ([README](src/com/demott/patterns/behavioral/strategy/README.md))
+- **Template Method**: `behavioral/templatemethod/` ([README](src/com/demott/patterns/behavioral/templatemethod/README.md))
+- **Visitor**: `behavioral/visitor/` ([README](src/com/demott/patterns/behavioral/visitor/README.md))
 
 Each pattern directory contains:
 - Java source code with JavaDoc
