@@ -3,16 +3,26 @@
 **Intent:** Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
 
 ## Structure
-- Component interface
-- Concrete Component
-- Decorator
-- Concrete Decorators
+- Component: `Coffee` (interface)
+- Concrete Component: `SimpleCoffee`
+- Decorator: `CoffeeDecorator` (abstract class)
+- Concrete Decorators: `MilkDecorator`, `SugarDecorator`
+- Client: `DecoratorDemo`
 
-## Example Usage
+## Example Usage (from `DecoratorDemo.java`)
 ```java
-com.demott.patterns.behavioral.command.ICommand command = new com.demott.patterns.behavioral.command.EmailCommand();
-com.demott.patterns.behavioral.command.ICommand decorated = new com.demott.patterns.behavioral.decorator.LoggingCommandDecorator(command);
-decorated.execute();
+public class DecoratorDemo {
+	public static void main(String[] args) {
+		Coffee coffee = new SimpleCoffee();
+		System.out.println(coffee.getDescription() + " : $" + coffee.cost()); // Output: Simple Coffee : $2.0
+
+		coffee = new MilkDecorator(coffee);
+		System.out.println(coffee.getDescription() + " : $" + coffee.cost()); // Output: Simple Coffee, Milk : $2.5
+
+		coffee = new SugarDecorator(coffee);
+		System.out.println(coffee.getDescription() + " : $" + coffee.cost()); // Output: Simple Coffee, Milk, Sugar : $2.7
+	}
+}
 ```
 
 ## When to Use

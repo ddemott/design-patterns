@@ -1,20 +1,33 @@
+c1.send("Hello from C1");
 # Mediator Pattern
 
 **Intent:** Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly.
 
 ## Structure
-- Mediator interface/class
-- Concrete Mediator
-- Colleague classes
+- Mediator interface: `ChatRoomMediator`
+- Concrete Mediator: `ChatRoom`
+- Colleague: `User`
+- Client: `MediatorDemo`
 
-## Example Usage
+## Example Usage (from `MediatorDemo.java`)
 ```java
-Mediator mediator = new Mediator();
-Colleague1 c1 = new Colleague1(mediator);
-Colleague2 c2 = new Colleague2(mediator);
-mediator.setColleague1(c1);
-mediator.setColleague2(c2);
-c1.send("Hello from C1");
+public class MediatorDemo {
+	public static void main(String[] args) {
+		ChatRoomMediator chatRoom = new ChatRoom();
+		User alice = new User("Alice", chatRoom);
+		User bob = new User("Bob", chatRoom);
+		User charlie = new User("Charlie", chatRoom);
+
+		alice.send("Hi everyone!");
+		bob.send("Hello Alice!");
+		charlie.send("Hey folks, what's up?");
+		// Output:
+		// Alice sends: Hi everyone!
+		// Bob receives: Alice: Hi everyone!
+		// Charlie receives: Alice: Hi everyone!
+		// ...
+	}
+}
 ```
 
 ## When to Use
